@@ -1,0 +1,50 @@
+#container {
+  width: 320px;
+  height: 320px;
+  margin-top: 100px;
+  margin: auto;
+}
+
+#container h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.quadrant {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 100px;
+}
+
+.quadrant:hover {
+  background-color: cornflowerblue;
+}
+
+#cell-0,
+#cell-1, 
+#cell-2, 
+#cell-3, 
+#cell-4, 
+#cell-5 {
+  border-bottom: 10px solid black;
+}
+
+#cell-1,
+#cell-2,
+#cell-4, 
+#cell-5,
+#cell-7,
+#cell-8 {
+  border-left: 10px solid black;
+}
+
+.winner {
+  color: dodgerblue;
+}
