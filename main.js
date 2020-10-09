@@ -72,9 +72,10 @@ const clickFunc = (event) => {
 };
 
 /* Waiting for the turn - Enabling Listeners */
-const enableListener = () => grid().forEach((el) => el.addEventListener('click', clickFunc));
+const enableListener = () =>
+	grid().forEach((el) => el.addEventListener('click', clickFunc));
 /* Waiting for the turn - Disabling Listeners */
-const disableListener = () =>	grid().forEach((el) => el.addEventListener('click', clickFunc));
+const disableListener = () =>
+	grid().forEach((el) => el.removeEventListener('click', clickFunc));
 
-
-	enableListener()
+enableListener();
